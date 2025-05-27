@@ -114,6 +114,7 @@ Materials:
 -measuring cylinder
 -320 g of rocks
 
+measuring force.pdf, this is how it looks like:
 
 Procedure:
 Preparation & Setup:
@@ -167,6 +168,8 @@ Vrocket = 250 ± 1 ml
 
 
 Also the volume added to every pump,  by measuring the displacement of air by pumping air into a cylinder filled with water.
+
+measuring the water displacement.pdf: for visual comparison
 
 
 Vper pump = Vfinal measurement - Vinitial measurement = 47.0 ± 0.5 ml - 9.0 ± 0.5 ml = 38 ± 1 ml
@@ -529,11 +532,18 @@ pumps amount
 
 6.3. Graphs
 
+physics comprehensive analyses graph:
 
-  
+in this graph i have left in, pumps to show that there is the same correlation nomatter in what unit pressure is reprecentet, seen here are all corelation measured.
 
-I included this graph to show that the correlation is the same between any of my independent variables and the number of pumps, but I think for visualization purposes having a more universal reference like pressure is better.
-  
+impulse vs pressure graph:
+
+this graph shows impulse as a funciton of pressure
+
+specific impulse vs pressure graph:
+
+this graph shows specific impulse as a fuction of pressure
+
   
   
 
@@ -606,3 +616,7 @@ From this research I will be able to use my understanding to go out and design m
 11. https://wikis.mit.edu/confluence/pages/viewpage.action?pageId=153816550
 12. https://eaglepubs.erau.edu/introductiontoaerospaceflightvehicles/chapter/rocket-engines/
 13. https://spacevoyageventures.com/fuel-efficiency-in-spacecraft-innovations-in-propulsion-and-energy-use/
+
+appendix:
+here we can see how i conductet the experiment:
+(any file with appendix in the name)
