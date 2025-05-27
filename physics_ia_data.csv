@@ -1,0 +1,6 @@
+pumps,pressure_pa,impulse_Ns,impulse_uncertainty_percent,mass_flow_rate_kgs,mass_flow_uncertainty_percent,specific_impulse_s,specific_impulse_uncertainty_percent
+10,256000.0,0.11,9.91,0.0222,4.49,51,25.29
+20,410500.0,0.19,7.08,0.0375,4.36,43,19.34
+30,564900.0,0.21,5.72,0.0683,4.32,32,16.76
+40,719300.0,0.32,5.26,0.0583,4.3,38,15.49
+50,873800.0,0.55,4.15,0.057,4.28,49,13.09
