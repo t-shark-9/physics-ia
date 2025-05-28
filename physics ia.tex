@@ -40,9 +40,9 @@
 
 \section{Introduction}
 
-When designing a rocket, the rocket engine will be a crucial component. If you choose not to buy an already existing engine, but decide to design your own, you will see that having an efficient engine will be one of your big priorities. Your rocket airframe might be the most aerodynamic, and your aviation controls are perfect, but it would matter if your engine cannot compulse it through space, because your engine works efficiently.
+When designing a rocket, the rocket engine will be a crucial component. If you choose not to buy an already existing engine, but decide to design your own, you will see that having an efficient engine will be one of your big priorities. Your rocket airframe might be the most aerodynamic, and your aviation controls are perfect, but it would not matter if your engine cannot compulse it through space, because your engine works inefficiently.
 
-I have come to find this exact problem when as a hobbyist trying to design a rocket and my own liquid fueled rocket engine, getting an efficient rocket engine is crucial. And efficiency in such will often be measured in specific impulse. Now there are alot of things impacting specific impulse which have to be considered when designing an engine. I found that some of them like ambient pressure are constrained anyways so I won't be able to impact them to make my engine more efficient. Others like the fuel choice are often very heavily researched already and have a simple answer, where using hydrogen with oxygen will give a higher specific impulse then kerosine with nitrous oxide for factors clarified below.
+I have come to find this exact problem when as a hobbyist trying to design a rocket and my own liquid fueled rocket engine, getting an efficient rocket engine is crucial. And efficiency in such will often be measured in specific impulse. Now there are alot of things impacting specific impulse which have to be considered when designing an engine. I found that some of them like ambient pressure are constrained anyways so I won't be able to impact them to make my engine more efficient. Others like the fuel choice are often very heavily researched already and have a simple answer, where using hydrogen with oxygen will give a higher specific impulse then kerosine with nitrous oxide.
 
 But one of the factors which I find hard to follow, is the impact of chamber pressure of a rocket, so the pressure inside the engine before the fuel leaves through the nozzle on specific impulse. Not Knowing what pressure should be inside the engine has haltet my design lately, because the chamber pressure also affects the nozzle ratios and so on... . Through my research I have found numerous nasa articles about optimal chamber pressure, but I haven't been able to visualize the impact or if there is really any myself.
 
@@ -62,7 +62,7 @@ Chamber pressure is very important in rocketry, and rocket propulsion, the press
 W = P\Delta V
 \end{equation}
 
-Higher pressures expect more work. The chamber pressures of the Saturn V's (the rocket which flew to the moon) rocket engines was around \SI{7}{\mega\pascal}, whilst the pressure inside the Raptor engines (propelling space x's star ship) \SI{35}{\mega\pascal} significantly higher.
+Higher pressures expect more work. The chamber pressures of the Saturn V's (the rocket which flew to the moon) rocket engines was around \SI{7}{\mega\pascal}, whilst the pressure inside the Raptor engines (propelling space x's star ship) is \SI{35}{\mega\pascal} significantly higher.
 
 \subsection{Impulse}
 
@@ -72,7 +72,7 @@ Impulse is a measure of the total momentum change something has, in rockets it w
 J = F\Delta T
 \end{equation}
 
-Impulse is very important in reference to change in momentum and energy. Impulse is very important in aerospace engineering and spacecraft design, to work on efficiency \cite{ref3}. To have high impulse means that the rocket is stronger which is often seen positive, impulse is also dependent on the time the force is applied \cite{ref4}, but the saturn v engine produced \SI{6770}{\kilo\newton} of thrust at sea level, whilst the raptor engine only produced \SI{2260}{\kilo\newton} of thrust at sea level. This decrease could be due to the higher pressure, but is likely just because a single Saturn V engine was expected to be stronger than one Raptor engine.
+Impulse is very important in reference to change in momentum and energy. Impulse is very important in aerospace engineering and spacecraft design, to work on efficiency \cite{ref3}. To have high impulse means that the rocket is stronger which is often seen positive, impulse iis also dependent on the time the force is applied \cite{ref4}, but the saturn v engine produced \SI{6770}{\kilo\newton} of thrust at sea level, whilst the raptor engine only produces \SI{2260}{\kilo\newton} of thrust at sea level. This decrease could be due to the higher pressure, but is likely just because a single Saturn V engine was expected to be stronger than one Raptor engine.
 
 \subsection{Mass Flow Rate}
 
@@ -149,8 +149,6 @@ Independent & Number of pumps / chamber pressure \\
 \item \SI{320}{\gram} of rocks
 \end{itemize}
 
-See Figure \ref{fig:measuring_force} for the force measurement setup.
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{measuring force.pdf}
@@ -164,7 +162,7 @@ See Figure \ref{fig:measuring_force} for the force measurement setup.
 \begin{enumerate}
 \item Cut a \SI{2.5}{\liter} cola bottle in half.
 \item Fill the bottom half with \SI{20}{\gram} of rocks.
-\item Place the bottle/rocket upside down, positioning it securely.
+\item Place the bottle/rocket in the half lower half of the cola bottle, positioning it securely.
 \item Surround the rocket base with \SI{300}{\gram} of rocks to prevent movement
 \end{enumerate}
 
@@ -178,7 +176,7 @@ See Figure \ref{fig:measuring_force} for the force measurement setup.
 
 \subsubsection{Pressurization \& Measurement Process}
 \begin{enumerate}
-\item Begin pressurizing the rocket.
+\item Begin pressurizing the rocket, at 10, 20, 30, 40, 50 pumps.
 \item Start the force plate measurement.
 \item Open the bottle valve to release pressure.
 \item Record the force plate readings throughout the process.
@@ -242,14 +240,15 @@ I measured the temperature at the start of the experiment and at the end.
 
 \begin{align}
 T_1 &= \SI{23.1 \pm 0.1}{\celsius} \\
-T_2 &= \SI{23.5 \pm 0.1}{\celsius} \\
+\end{align}
 \begin{align}
-T_{\text{avg}} &= \frac{23.1 + 23.5}{2} \\
+T_2 &= \SI{23.5 \pm 0.1}{\celsius} \\
+\end{align}
+\begin{align} T_{\text{avg}} &= \frac{23.1 + 23.5}{2} \\
 &= \SI{23.3}{\celsius}
 \end{align}
-\end{align}
 
-I was unable to measure the density of my local air, but through research I found the expected $M_r$ for my pressure and Temperature, assuming it is constant. I treated researched values as constant and assumed no uncertainties.
+I was unable to measure the density of my local air, but through research \cite{ref14}. I found the expected $M_r$ for my pressure and Temperature, assuming it is constant. I treated researched values as constant and assumed no uncertainties.
 
 $M_{r,\text{air}} = \SI{0.0290}{\kilo\gram\per\mol}$
 
@@ -259,7 +258,7 @@ Now assuming the ideal gas law:
 PV = nRT
 \end{equation}
 
-I could calculate the pressure, from the initial pressure, i could not measure my local atmospheric pressure, but in my weather app i found the local pressure at the time of my experiment.
+I could calculate the pressure, from the initial pressure, i could not measure my local atmospheric pressure, but in my weather app i found the local pressure at the time of my experiment, see appendix.
 
 \begin{align}
 n &= \frac{PV}{RT} \\
@@ -319,7 +318,7 @@ J_{50} &= A_t = \frac{1}{2}(b\Delta t h F) \\
 
 $\%\text{uncertainty}(J_{50}) = \left(\frac{\pm \SI{0.0002}{\second}}{\SI{0.03982}{\second}} + \frac{\pm \SI{1}{\newton}}{\SI{27.4}{\newton}}\right) \times 100 = 4.15\%$
 
-Now that I know what the change in momentum is, what mass carries this mass out, the mass flow rate.
+Now that I know what the change in momentum is, now i can find what mass carries this momentum out, the mass flow rate.
 
 $\dot{m} = \frac{\Delta m}{\Delta t}$
 
@@ -337,8 +336,6 @@ PV &= nRT = \frac{mRT}{M_r}, \quad P = \frac{\rho RT}{M_r}, \quad \rho = \frac{P
 &= \SI{1.195}{\kilo\gram\per\meter\cubed}
 \end{align}
 
-\textit{Relative uncertainty: $\pm 0.4\%$}
-
 I also researched what density air should be at \SI{23}{\celsius} and standard pressure. I was unable to find data specific for \SI{23.2}{\celsius} and my specific pressure. But for \SI{23}{\celsius} and standard pressure were $\rho = \SI{1.289}{\kilo\gram\per\meter\cubed}$, so my calculation was probably not far off.
 
 \begin{align}
@@ -346,9 +343,6 @@ I also researched what density air should be at \SI{23}{\celsius} and standard p
 &= \frac{\SI{8.737e5}{\pascal} \times \SI{0.0290}{\kilo\gram\per\mol}}{\SI{8.31}{\joule\per\mol\per\kelvin} \times \SI{296.3}{\kelvin}} \\
 &= \SI{10.29}{\kilo\gram\per\meter\cubed}
 \end{align}
-
-\textit{Relative uncertainty: $\pm 2.77\%$}
-
 \begin{align}
 m_i &= \SI{1.195}{\kilo\gram\per\meter\cubed} \times \SI{0.000250 \pm 0.000001}{\meter\cubed} \\
 &= \SI{0.0003}{\kilo\gram} \\
@@ -381,7 +375,7 @@ This required the average force, for a triangle
 F_{\text{avg}} = H_{\text{avg}} = \frac{2A}{\text{Base}(\Delta T)}
 \end{equation}
 
-And i researched the gravitational acceleration of my location
+And i researched the gravitational acceleration of my location\cite{ref1}5. .
 
 \begin{align}
 I_{sp50} &= \frac{2 \times J_{50}}{\Delta t \times \dot{m}_{50} \times g} \\
@@ -486,21 +480,21 @@ I_{sp50} &= \frac{2 \times J_{50}}{\Delta t \times \dot{m}_{50} \times g} \\
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{physics_ia_comprehensive_analysis.pdf}
-\caption{Physics comprehensive analyses graph: in this graph i have left in, pumps to show that there is the same correlation nomatter in what unit pressure is reprecentet, seen here are all corelation measured.}
+ \caption{in these graphs i have left in pumps as a independent variable, to show that there is the same correlation nomatter in what unit pressure is reprecentet, seen here are all corelation measured.}
 \label{fig:comprehensive_analysis}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{impulse_vs_pressure.pdf}
-\caption{Impulse vs pressure graph: this graph shows impulse as a funciton of pressure}
+    \caption{this graph shows impulse as a funciton of pressure, bigger for better visualization}
 \label{fig:impulse_pressure}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{specific_impulse_vs_pressure.pdf}
-\caption{Specific impulse vs pressure graph: this graph shows specific impulse as a fuction of pressure}
+\caption{this graph shows specific impulse as a fuction of pressure,  bigger for better visualization}
 \label{fig:specific_impulse_pressure}
 \end{figure}
 
@@ -508,13 +502,13 @@ I_{sp50} &= \frac{2 \times J_{50}}{\Delta t \times \dot{m}_{50} \times g} \\
 
 \subsection{Processing the Data}
 
-I had an incredible increase and range in pressure which I didn't actually expect, reaching all the way to more than 8 times atmospheric pressure. It would seem that one expects this to have a significant impact on performance. Then unfortunately there seems to be an outlier 30 pump measuring point, which is constantly deviating from the other expected values.
+I had an incredible increase and range in pressure which I didn't actually expect, reaching all the way to more than 8 times atmospheric pressure. It would seem that one expects this to have a significant impact on performance. Then unfortunately there seems to be an outlier, 30 pump measuring point, which is constantly deviating from the other expected values.
 
 I think this might be because after finding leaks in my palimetery i added more o rings to seal the chamber, it could be that even those rings did not seal the chamber correctly after pressures exceeded the pressure at 30 pumps reducing the actual pressure in the chamber than what i calculated due to leaks, for the following measurements. But I did not witness any signs of leaks when conducting my experiment.
 
 \subsection{Interpretation of Graphs}
 
-From looking at the graphs it is obvious that an increase in pressure very much increases impulse very directly, with a strong correlation, both against number of pumps and pressure. But the correlation between pressure and mass flow rate is almost as strong, but the angle of the line is less steep, this is probably because the nozzle throat does not limit the amount of mass that can exist at a time, which means the time which it takes for the mass to flow out is longer because there is more air particles in the rocket and therefore mass flow is strongly affected. And because the mass flow rate seems to be affected in this way the higher force measured gets cancelled out in the formula for specific impulse where we divide by the mass flow rate. In turn the higher force gets divided by a higher mass flow rate dampening the change, due to pressure.
+From looking at the graphs it is obvious that an increase in pressure very much increases impulse very directly, with a strong correlation, both against number of pumps and pressure. The correlation between pressure and mass flow rate is almost as strong, but the angle of the line is less steep, this is probably because the nozzle throat does not limit the amount of mass that can exist at a time, which means the time which it takes for the mass to flow out is longer because there is more air particles in the rocket and therefore mass flow is strongly affected. And because the mass flow rate seems to be affected in this way the higher force measured gets cancelled out in the formula for specific impulse where we divide by the mass flow rate. In turn the higher force gets divided by a higher mass flow rate dampening the change, due to pressure. Resulting in the bad correlation between pressure and specific impulse.
 
 Which is actually interesting to find out as well, I did not consider that both changes can cancel each other out leading to almost no visible correlation between pressure and specific impulse.
 
@@ -538,7 +532,7 @@ Not having equipment that can measure ambient pressure or that can take tests on
 
 \subsection{Improvements}
 
-Next time I would possibly look into using a scale as a force plate instead, which often goes to 0.001 grammys significant figures, far more accurate then the force plate, and then accounting for gravity to calculate the forces. This could decrease the \%uncertainty and reduce the inconsistency of measurements.
+Next time I would possibly look into using a scale as a force plate instead, which often goes to 0.001 gramms significant figures, far more accurate then the force plate, and then accounting for gravity to calculate the forces. This could decrease the \%uncertainty and reduce the inconsistency of measurements.
 
 Getting access to measurement equipment which can measure more atmosphere specific things similar to once used in weather stations could have a huge impact on the relevance of my measurements to the surroundings of my experiment.
 
@@ -550,7 +544,7 @@ Considering that one of my errors might be caused due to leaks as mentioned as a
 
 \section{Conclusion}
 
-In conclusion the chamber pressure of a rocket will have some impact on the specific impulse, and being able to reach higher pressures inside a rocket can be beneficial, as long as it is safe. But there might be other variables to look into which affect specific impulse more strongly.
+In conclusion the chamber pressure of a rocket could have some impact on the specific impulse, and being able to reach higher pressures inside a rocket can be beneficial, as long as it is safe. But there might be other variables to look into which affect specific impulse more strongly.
 
 From this research I will be able to use my understanding to go out and design my rocket engine to be able to withstand higher pressures, although all pressures used in this experiment were only close to 8 bars I am looking forward to predicting even higher specific impulse in my rocket at 100-200 bars.
 
@@ -578,7 +572,7 @@ Here we can see how i conducted the experiment:
 \caption{Measuring water displacement appendix}
 \label{fig:water_displacement_appendix}
 \end{figure}
-
+atmospheric pressure, from weather app:
 \begin{thebibliography}{99}
 
 \bibitem{ref1}
@@ -619,6 +613,12 @@ Rocket Engines. \url{https://eaglepubs.erau.edu/introductiontoaerospaceflightveh
 
 \bibitem{ref13}
 Fuel Efficiency in Spacecraft. \url{https://spacevoyageventures.com/fuel-efficiency-in-spacecraft-innovations-in-propulsion-and-energy-use/}
+
+\bibitem{ref14}
+Density of air. https://srjcstaff.santarosa.edu/~oraola/CHEM1ALECT/Ch.%2005/waals.pdf
+
+\bibitem{ref15}
+Local gravity. https://bgi.obs-mip.fr/data-products/gravity-databases/land-gravity-data-prod/#/data/land
 
 \end{thebibliography}
 
